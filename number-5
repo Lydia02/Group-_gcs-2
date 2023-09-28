@@ -1,0 +1,8 @@
+#!/bin/bash
+read -p "Enter a directory path: " path
+if [ -d "$path" ]; then
+   echo "List of files in the directory path:"
+    ls "$path"
+else
+    echo "The provided path is not a directory. Please provide the path of a directory."
+fi
